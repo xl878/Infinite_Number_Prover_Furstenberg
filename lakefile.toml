@@ -1,0 +1,14 @@
+name = "Infinite_Number_Prover_Furstenberg"
+version = "0.1.0"
+defaultTargets = ["infinite_number_prover_furstenberg"]
+
+[[lean_lib]]
+name = "InfiniteNumberProverFurstenberg"
+
+[[lean_exe]]
+name = "infinite_number_prover_furstenberg"
+root = "Main"
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+
