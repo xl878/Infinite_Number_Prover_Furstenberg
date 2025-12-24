@@ -1,8 +1,9 @@
 # Infinite_Number_Prover_Furstenberg
 Project Overview: https://sites.google.com/scarletmail.rutgers.edu/640-300-h2-final-project/home
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 **Reference and Acknowledgment**
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 This Lean development is adapted from and inspired by the Isabelle/HOL formalization of Furstenberg’s topology in the Archive of Formal Proofs.
 The overall conceptual structure and several proof strategies follow Eberl’s Isabelle version, but the Lean codebase is an independent re-implementation with Lean-specific definitions, auxiliary lemmas, and topological constructions.
 
@@ -13,9 +14,9 @@ https://www.isa-afp.org/entries/Furstenberg_Topology.html
 
 PDF Outline: https://www.isa-afp.org/browser_info/current/AFP/Furstenberg_Topology/outline.pdf
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 **Relation to the Isabelle/HOL Formalization**
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 This project is not a port of the Isabelle AFP entry.
 It follows the same broad mathematical outline but implements the theory directly in Lean 4 and Mathlib.
 
@@ -27,9 +28,9 @@ The Lean development, therefore, differs structurally from the Isabelle version 
 
 Thus, the project should be viewed as a Lean-native reconstruction of Furstenberg’s argument, informed by the Isabelle presentation but developed independently.
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 **Academic Practice Disclaimer**
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 This repository is part of a personal academic exploration of formalizing classical number-theoretic arguments in the Lean theorem prover.
 Although care has been taken to maintain mathematical correctness and proper citation, this development:
 1. is not an officially reviewed mathlib contribution,
@@ -38,9 +39,9 @@ Although care has been taken to maintain mathematical correctness and proper cit
 
 Users who cite, depend on, or extend this code should apply appropriate academic caution and verify components as needed.
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 **Lean-Specific Aspects**
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 Key components that are unique to the Lean formalization:
 1. Separate topology space: FbInt := ULift ℤ, ensuring the Furstenberg topology does not interfere with the usual integer topology.
 2. Transport lemmas: liftSet, arithProgF_eq_liftSet, etc., connecting ℤ-based arithmetic progressions with their FbInt versions.
